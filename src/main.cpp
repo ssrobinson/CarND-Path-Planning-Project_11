@@ -308,7 +308,7 @@ int main() {
         vector<double> avg_lane_speeds = {0.0,0.0,0.0};
         vector<int> lane_int = {0,0,0};
 
-	//setup to calculate reference velocity for each lane (all_lane_speeds)
+	//setup to calculate reference velocity for each lane (avg_lane_speeds)
 	for(int i=0; i<sensor_fusion.size(); i++)
 		{
 		//car is in my lane
@@ -470,8 +470,8 @@ int main() {
 
 		//In frenet add evenly 30m spaced points ahead of the starting reference
 		vector<double> next_wp0 = getXY(car_s+35,(2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
-		vector<double> next_wp1 = getXY(car_s+70,(2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
-		vector<double> next_wp2 = getXY(car_s+100,(2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
+		vector<double> next_wp1 = getXY(car_s+65,(2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
+		vector<double> next_wp2 = getXY(car_s+95,(2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
 
 		ptsx.push_back(next_wp0[0]);
 		ptsx.push_back(next_wp1[0]);
