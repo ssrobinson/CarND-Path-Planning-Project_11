@@ -1,6 +1,6 @@
 # CarND-Path-Planning-Project
 ## Self-Driving Car Engineer Nanodegree Program
-===
+---
 In this project, a cost function is used to drive and plan a vehicle's route along a highway with other vehicles on the road in a simulator .
 
 The vehicle must meet the following criteria:
@@ -28,7 +28,7 @@ My [code](https://github.com/srobinson/CarND-Path-Planning-Project) for this pro
 
 I also experimented with two options, one allowed the vehicle to move into any of the three lanes (0, 1, or 2) as long as the cost function permitted it and the other was to only allow the vehicle to move between lanes 0 and 1. I decided to use the second approach because the first approach experienced some issues occasionally and in real-world circumstances passing on the right is not legal in some states. In some cases, when the vehicle was stuck in lane 0 for an extended period of time due to another vehicle blocking it from moving right, the autonomous vehicle would move directly to lane 2 from lane 0 because it had decided lane 2 had the lowest cost.
 
-===
+---
 
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases).
